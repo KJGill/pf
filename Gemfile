@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use postgres as the database for Active Record

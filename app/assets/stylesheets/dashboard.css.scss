@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+font-family: 'Anaheim', sans-serif;
+}
 
 .footer {
 	width:100%;
@@ -12,7 +15,7 @@
 	clear: both;
 	background: #0c415b;
 	height: 50px;
-	border-top: #0b2430 4px solid;
+	/*border-top: #0b2430 4px solid;*/
 	min-height: 130px;
 	display: block;
 	overflow: hidden;

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  class_id: 1
+  f_name: MyString
+  l_name: MyString
+  origin_country: MyString
+
+two:
+  class_id: 1
+  f_name: MyString
+  l_name: MyString
+  origin_country: MyString

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  f_name: MyString
+  l_name: MyString
+  origin_country: MyString
+  residency_country: MyString
+  program: MyString
+  grad_year: 1
+
+two:
+  f_name: MyString
+  l_name: MyString
+  origin_country: MyString
+  residency_country: MyString
+  program: MyString
+  grad_year: 1

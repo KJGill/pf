@@ -108,7 +108,14 @@ ul.inquiries {
 	height: 30px;
 }
 .prodigy_logo {
-	margin-right: 180px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.prodigy_logo img {
+	margin-right: 100px;	
+	position: relative;
 }
 
 table {

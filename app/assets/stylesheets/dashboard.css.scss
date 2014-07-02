@@ -7,7 +7,6 @@ font-family: 'Anaheim', sans-serif;
 }
 
 .footer {
-	
 	width:100%;
 	height:40px;
 	position:fixed;
@@ -17,70 +16,95 @@ font-family: 'Anaheim', sans-serif;
 	background: #0c415b;
 	height: 50px;
 	border-top: #0b2430 4px solid;
-	margin-top: 20px;
-	min-height: 120px;
+	min-height: 130px;
 	display: block;
 	overflow: hidden;
 }
+.copy-right {
+	width: 95%;
+	margin: 0 auto;
 
-
-.alpha {
-margin-left: 0;
 }
-.omega {
+/*.omega {
 margin-right: 0;
 }
-
+*/
 
 .social-links li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 50px;	
+	padding-right: 40px;
 }
-
-/*li {
-display: list-item;
-margin-left: auto;
-    margin-right: auto;
-    width: 6em
-}
-*/
 
 .social-links  {
 	text-align: center;
+	margin-bottom: -10px;
+
 }
 ul.social-links li a {
-line-height: 25px;
-vertical-align: top;
+	line-height: 25px;
+	vertical-align: top;
 }
 
+ul.social-links li a img {
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+a img {
+	border: 0;
+}
+
+a:-webkit-any-link {
+	cursor: auto;
+}
 .social-links li a {
 	text-align: center;
+	font-size: 16px;
+
+
 }
 
+.inquiries li {
+	display: inline;
+	list-style-type: none;
+}
+
+.inquiries li a {
+	font-size: 13px;
+	margin-left: 15px;
+}
+
+.inquiries {
+	/*	margin-bottom: -2px;*/
+	
+	
+}
+ul.inquiries {
+	margin-right: 30px;
+}
 .footer ul li a {
-display: inline;
-list-style-type: none;
-padding-right: 30px;
+	display: inline;
+	list-style-type: none;
 }
 
 
 .footer p, .footer li a {
-color: #b6d3e2;
-font-size: 18px;
+	color: #b6d3e2;
+
 }
 
-#footer ul li {
-font-family: 'Arial', sans-serif;
+.footer ul li {
+	font-family: 'Arial', sans-serif;
 }
 
-.header1{
 
+.header1 {
 	background: #ffffff;
 	position: fixed;
 	box-shadow: 0px 1px 1px #888888;
 	margin-top: 0px;
-width: 100%;
-height: 30px;
+	width: 100%;
+	height: 30px;
 }
 

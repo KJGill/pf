@@ -4,7 +4,6 @@
 
 
 .footer {
-
 	width:100%;
 	height:40px;
 	position:absolute;
@@ -18,21 +17,29 @@
 	min-height: 120px;
 	display: block;
 	overflow: hidden;
+	border: solid;	
 }
+.copy-right {
+	/*margin-right: 30px;
+    width: 100%;
+    border: solid;
+    text-align: center;*/
+	width: 100%;
+	border: solid;
+	margin-left: -15px;
+	margin-right: -15px;
 
 
-.alpha {
-margin-left: 0;
-}
-.omega {
+ }
+/*.omega {
 margin-right: 0;
 }
-
+*/
 
 .social-links li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 50px;	
+	padding-right: 50px;
 }
 
 /*li {
@@ -67,6 +74,6 @@ color: #b6d3e2;
 font-size: 18px;
 }
 
-#footer ul li {
+.footer ul li {
 font-family: 'Arial', sans-serif;
 }

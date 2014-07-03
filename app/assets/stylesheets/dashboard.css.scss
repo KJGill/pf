@@ -19,10 +19,12 @@ font-family: 'Anaheim', sans-serif;
 	min-height: 130px;
 	display: block;
 	overflow: hidden;
+	bottom: 0px;
 }
 .copy-right {
 	width: 95%;
 	margin: 0 auto;
+	margin-top: 10px;
 
 }
 /*.omega {
@@ -38,22 +40,29 @@ margin-right: 0;
 
 .social-links  {
 	text-align: center;
-	margin-bottom: -10px;
+	margin-top: 8px;
+	margin-right: auto;
+	margin-left: auto;
 
 }
 ul.social-links li a {
 	line-height: 25px;
-	vertical-align: top;
+	vertical-align: bottom;
 }
 
 ul.social-links li a img {
 	margin-right: 10px;
 	margin-top: 0px;
+	vertical-align: middle;
 }
 
 a img {
 	border: 0;
 }
+/*img {
+vertical-align: middle;
+margin-top: 2px;
+}*/
 
 a:-webkit-any-link {
 	cursor: auto;
@@ -76,12 +85,14 @@ a:-webkit-any-link {
 }
 
 .inquiries {
-	/*	margin-bottom: -2px;*/
+		margin-bottom: -2px;
 	
 	
 }
 ul.inquiries {
 	margin-right: 30px;
+	margin-top: 10px;
+	text-align: right;
 }
 .footer ul li a {
 	display: inline;
@@ -106,7 +117,15 @@ ul.inquiries {
 	margin-top: 0px;
 	min-width: 100%;
 	height: 30px;
+	top: 0px;
+	left: 0px;
 }
+
+.header1 img {
+	vertical-align: middle;
+	margin-top: 2px;
+}
+
 /*.prodigy_logo {
 	display: block;
 	margin-right: auto;

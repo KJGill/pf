@@ -1,0 +1,121 @@
+
+/*new investment buttons*/
+
+.container {
+	width: 100%;
+}
+.new_investment {
+	text-decoration: none;	
+	border-radius: 0;	
+	background-color: #b6d3e2;
+	width: 80%;
+	text-align: center;
+}
+
+.container .full-page {
+	width: 100%;
+}
+
+/*for overiveiw div*/
+.overview {
+	width: 60%;
+	background-color: rgba(232,232,232,.6);
+}
+
+.knowledge {
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+/*investment div*/
+.investment {
+	width: 70%;
+	background-color: rgba(232,232,232,.6);
+}
+
+/* drop down button*/
+
+
+a.button--blue, .button--blue {
+background: white;
+color: Black;
+border: 1px solid black;
+padding: 5px;
+}
+
+#select_school {
+	margin-bottom: 10px;
+
+	
+}
+
+#select_school a {
+	width: 100%;
+}
+
+.select_button {
+	border-radius: 0;
+}
+
+
+.pictures {
+	margin-bottom: 10px;
+}
+
+.col-md-6 .thumbnail {
+	width: 60%;
+}
+
+img .img-thumbnail {
+	 position: relative; 
+   	width: 100%; /* for IE 6 */
+
+}
+
+.text {
+	position: absolute; 
+	bottom: 20px;   
+	text-align: center;
+	left: 1px;
+	width: 10 0%;
+}
+
+
+.stats ul{
+	list-style-type: none;
+	color: #999999;
+	ul{
+		margin-left: -1em;
+		color: #00A1E4;
+	}
+
+}
+
+.relationship_manager{
+	background: #f1f2f2;
+	border-radius: 10px 10px 0px 0px; 
+	width:200px;
+	height:400px;
+	float:right;
+	position: relative;
+	padding-bottom: 50px;
+
+}
+
+.nav-thumbnail {
+	border-color: #00a1e4;
+	border-radius: 50%;
+	line-height: 0;
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #00a1e4;
+	margin-bottom: 0.954955147666624rem;
+}
+
+
+.nav > li > a {
+	position: absolute;
+	display: inline-block;
+	right:0;
+}
+

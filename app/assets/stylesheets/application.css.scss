@@ -1,4 +1,5 @@
 @import "dashboard";
+@import "bootstrap_override";
 @import "bootstrap";
 @import "component";
 @import "intial_dashboard";
@@ -11,4 +12,9 @@ http://www.cssstickyfooter.com */
 
 
 
+
+
+.col-md-4 {
+	padding: 0 !important;
+}
 

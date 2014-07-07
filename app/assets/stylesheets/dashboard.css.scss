@@ -4,11 +4,13 @@
 
 body{
 font-family: 'Anaheim', sans-serif;
+overflow: hidden;
 }
 
 
 .footer {
 	min-width:100%;
+
 	position:relative;
 	left:0;
     clear: both;
@@ -20,6 +22,7 @@ font-family: 'Anaheim', sans-serif;
 	bottom: 0px;
 	padding: 0;
 	margin: 0;
+
 }
 .copy-right {
 	width: 95%;

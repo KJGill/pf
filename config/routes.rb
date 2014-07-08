@@ -1,6 +1,5 @@
-Rails.application.routes.draw do
-
-   
+Rails.application.routes.draw do   
+  devise_for :investors
   root 'dashboard#dashboard'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+#Using gem to validate email addresses 
+gem 'email_verifier'
+
+#Using gem to have country dropdown
+gem 'country_select'
+
+#Using devise for signup/ signin 
+gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'

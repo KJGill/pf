@@ -2,6 +2,7 @@
 
 Investor Dashboard for Prodigy Finance. Allows user to sign up, view dashboard, create a network, and view the returns and social impact of his/her investment
 
+Heroku Url : http://calm-taiga-2751.herokuapp.com/
 * No Ruby version specified
 
 * Postrgres database 

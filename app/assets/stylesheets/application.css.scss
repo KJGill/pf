@@ -1,4 +1,20 @@
 @import "dashboard";
+@import "bootstrap_override";
 @import "bootstrap";
 @import "component";
-@import "normalize";
+@import "intial_dashboard";
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com */
+
+
+
+
+
+.col-md-4 {
+	padding: 0 !important;
+}
+

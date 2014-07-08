@@ -7,3 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+schools = ['Cambridge Judge Business School',
+			'Cass Business School',
+			'Columbia Business School',
+			'Cranfield School of Management',
+			'European School of Management and Technology',
+			'London Business School',
+			'Manchester Business School',
+			'Manchester Business School',
+			'Oxford University Said Business School',
+			'Vlerick Business School']
+
+schools.each do |school|
+	School.create!(name: school)
+end
+

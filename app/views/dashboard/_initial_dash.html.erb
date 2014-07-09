@@ -56,7 +56,8 @@
 					<div class = "col-md-4" style = "padding:0;">
 					</div>
 					<div class = "col-md-4" style = "padding:0;">
-						<button type="button" class="btn btn-default  btn-lg new_investment knowledge" href = "https://prodigyinvest.zendesk.com/hc/en-us">Knowledge Base</button>
+						<button type="button" class="btn btn-default  btn-lg
+						 new_investment knowledge" href = "https://prodigyinvest.zendesk.com/hc/en-us">Knowledge Base</button>
 					</div>
 					<div class = "col-md-4" style = "padding:0;">
 					</div>
@@ -100,11 +101,24 @@
 
 
 		<!-- seperate two divs -->
+
 		<script type="text/javascript">
 		$(function () { 
 			$("#fact-card_modal").modal({show: false});
 		});  
 		</script>
+
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('.dropdown-toggle').dropdown()
+$(function() {
+	$("#select_school li:first").click(function(){
+		$('ul:first',this).toggle();
+	})
+});
+</script>
+
+
 
 		<br></br>
 		<!-- div to find out more about school terms and students to invest -->
@@ -123,7 +137,7 @@
 							<div class = "col-md-3">
 							</div>
 							<div class = "col-md-6">
-								<div class="dropdown container" id = "select_school"style = "width:100%; text-align:center" >
+								<div class="dropdown container" id = "select_school" style = "width:100%; text-align:center" >
 									<a href="#" class="btn-lg button--blue dropdown-toggle km-investor-home-banner-dropdown select_button col-md-6" data-toggle="dropdown" style = "width:100%; margin:0;">
 										Select School 
 										<span class="caret" ></span>
@@ -200,15 +214,15 @@
 	</div>
 </div>
 
-<div class="modal student-modal" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div class="modal fade student-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 				<h4 class="modal-title" id="myModalLabel">Students</h4>
 			</div>
 			<div class="modal-body">
-				<h3>These are the students you can fund:</h3>
+				This is the list of students
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -219,13 +233,6 @@
 
 <% end %>
 
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$("#select_school li:first").click(function(){
-		$('ul:first',this).toggle();
-	})
-});
-</script>
+
 
 

@@ -4,7 +4,7 @@
 
 body{
 font-family: 'Anaheim', sans-serif;
-overflow: hidden;
+/*overflow: hidden;*/
 }
 
 
@@ -124,6 +124,14 @@ ul.inquiries {
 	top: 0px;
 	left: 0px;
 	z-index: 10;
+
+	.header_link{
+		float: right;
+		vertical-align: bottom;
+		padding-right: 20px;
+		padding-top: 10px;
+		bottom:0;
+	}
 }
 
 .header1 img {

@@ -118,11 +118,35 @@ img .img-thumbnail {
 .relationship_manager{
 	background: #f1f2f2;
 	border-radius: 10px 10px 0px 0px; 
-	width:200px;
-	height:400px;
+	/*width:200px;
+	height:400px;*/
 	float:right;
 	position: relative;
-	padding-bottom: 50px;
+
+	.txt{
+		margin-left: 10px;
+		margin-right: 10px ; 
+			}
+	/*padding-bottom: 50px;*/
+		img{
+			margin-top: 20px;
+
+		}
+		.contact-links{
+			display: inline-block;
+			bottom: 0;
+			margin-top: 10px;
+			width: 100%;
+
+			.btn-group-justified {
+			border-radius: 0;
+			background: white;
+			border: 1px solid;}
+
+		}
+		button{
+			padding:6px;
+		}
 
 }
 
@@ -134,12 +158,5 @@ img .img-thumbnail {
 	overflow: hidden;
 	border: 1px solid #00a1e4;
 	margin-bottom: 0.954955147666624rem;
-}
-
-
-.nav > li > a {
-	position: absolute;
-	display: inline-block;
-	right:0;
 }
 

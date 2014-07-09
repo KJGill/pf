@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
 	def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :origin_country, :resident_country, :program, :grad_year, :school_id, :alumnus_status]
   end
+
+  def auth_user
+		redirect_to "root" unless user_signed_in?
+	end
+
 end

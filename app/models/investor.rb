@@ -4,7 +4,7 @@ class Investor < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-	has_one :school
+	has_one :school #need to change in the future
 
 	validates :first_name, :presence => true 
 	validates :last_name, :presence => true 

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'investors/index'
 
   devise_for :investors
-  root 'dashboard#dashboard'
+  root 'investors#dashboard'
   resources :investors, only: [:edit, :update]
 
 

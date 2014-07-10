@@ -1,0 +1,235 @@
+
+<div class = "container full-page">
+<br></br>
+<div class = "col-md-1">
+</div>
+<div class = "col-md-5">
+	<div class = "container welcome" style ="width: 100%">
+		<h1> Welcome, John</h1>
+	</div>
+</div>
+<div class = "col-md-6">
+</div>
+<!-- investment buttons -->
+<div class = "row">
+	<div class = "col-md-10">
+		<div class = "row">
+			<div class = "investment_buttons">
+				<div class = "col-md-3">
+				</div>
+				<div class = "col-md-3">
+					<button type="button" class="btn btn-default btn-lg new_investment">New Investment</button>
+				</div>
+				<div class = "col-md-3">
+					<button type="button" class="btn btn-default btn-lg new_investment">Continue Application</button>
+				</div>
+			</div>
+			<div class = "col-md-3">
+			</div>
+		</div>
+		<br></br>
+
+
+		<div class = "overview container" style = "border: solid;">
+			<div class = "row">
+				<div class = "col-md-12">
+					<h2 class = "container" style = "width:100%;">
+						Overview:
+					</h2>
+				</div>
+			</div>
+			<div class = "row container" > 
+				<div class = "col-md-12">
+					<h5 style = "width:100%;">
+						Still have questions about the investor process?
+					</h5>
+				</div>
+			</div>
+			<div class = "row container">
+				<div class = "col-md-12">
+					<h5 style = "width:100%;">
+						Seach for answers in our knowledge base.
+					</h5>
+				</div>
+			</div>
+			<div class = "row">	
+				<div class = "col-md-4" style = "padding:0;">
+				</div>
+				<div class = "col-md-4" style = "padding:0;">
+					<button type="button" class="btn btn-default  btn-lg
+					new_investment knowledge" href = "https://prodigyinvest.zendesk.com/hc/en-us">Knowledge Base</button>
+				</div>
+				<div class = "col-md-4" style = "padding:0;">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class = "col-md-2">
+		<!-- stats side marketing -->
+			<!-- <div class = "row">
+			<div class = "col-md-3" style = "border:solid"> -->
+				<div class = "stats container"> 
+					<ul style = "text-align:center;">
+						<li>to date</li>
+						<ul>
+							<li>$50M</li>
+						</ul>
+						<li>DISBURSED</li>
+						<li>to over</li>
+						<ul>
+							<li>1209</li>
+						</ul>
+						<li>STUDENTS</li>
+						<li>from</li>
+						<ul>
+							<li>90</li>
+						</ul>
+						<li>COUNTRIES</li>
+						<li>with a</li>
+						<ul>
+							<li>99%</li>
+						</ul>
+						<li>REPAYMENT RATE</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- overview to get to general knowledge base -->
+
+
+	<!-- seperate two divs -->
+
+	<script type="text/javascript">
+		$(function () { 
+			$("#fact-card_modal").modal({show: false});
+		});  
+	</script>
+
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('.dropdown-toggle').dropdown()
+		$(function() {
+			$("#select_school li:first").click(function(){
+				$('ul:first',this).toggle();
+			})
+		});
+	</script>
+
+
+
+	<br></br>
+	<!-- div to find out more about school terms and students to invest -->
+	<div class = "row">
+		<div class = "col-md-10">
+			<div class = "investment container" style = "border:solid;">
+				<div class = "row" >
+					<h2 class = "container" style = "width:100%;">
+						School Specific Terms:
+					</h2>
+				</div>
+				<br></br>
+				<div class = "row" >
+
+					
+					<div class = "col-md-3">
+					</div>
+					<div class = "col-md-6">
+						<div class="dropdown container" id = "select_school" style = "width:100%; text-align:center" >
+							<a href="#" class="btn-lg button--blue dropdown-toggle km-investor-home-banner-dropdown select_button col-md-6" data-toggle="dropdown" style = "width:100%; margin:0;">
+								Select School 
+								<span class="caret" ></span>
+							</a>  
+						</div>          
+						<ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+							<% School.all.each do |school| %>
+							<li><%= link_to school.name, '#' %></li>
+							<% end %>
+						</ul>
+					</div>
+					<div class = "col-md-3">
+					</div>
+				</div>
+
+				<br></br>	
+			<!-- <div class = "col-md-3">
+		</div> -->
+		<div class = "col-md-6"  style = "text-align:center;">
+			<div class="thumbnail-container">
+				<img src="/assets/school_thumbnail.png" class="img-thumbnail">
+				<div id =  "fact-card_modal" data-target=".bs-example-modal-lg">
+					<a href="#" class="btn"  data-toggle="modal" data-target=".fact-card" id = "fact-card_modal">Fact Card</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class = "col-md-6" style = "text-align:center;">
+			<div class="thumbnail-container">
+				<img src="/assets/school_thumbnail.png" class="img-thumbnail">
+				<a href="#" class="btn"  data-toggle="modal" data-target= ".student-modal" id = "fact-card_modal">Students</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--   -->
+<div class = "col-md-2">
+	<div class = "relationship_manager" style = "text-align:center;"> 
+		<div class = "txt" > <h5> Contact Jenn, <br> Your Investor Relations Manager</h5></div>
+		<center>
+			<img src="/assets/jenn-portrait.png" class="nav-thumbnail">
+		</center>
+		<div class = "contact-links">
+			<button type="button" class="btn btn-group-justified glyphicon glyphicon-phone ">Schedule a Call</button>
+			<button type="button" class="btn btn-group-justified glyphicon glyphicon-envelope " style = "border-top:0px">Send a Message</button>
+		<!-- 
+		<a class= "icon icon-lab" href="#">Schedule a Call</a> <br>
+		<a class= "icon icon-mail" href="#">Send a Message</a> -->
+	</div>
+	
+</div>
+</div>
+
+
+
+<%= content_for :script do %>
+<div class="modal fade fact-card" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel">Fact-Card</h4>
+			</div>
+			<div class="modal-body">
+				This is the facts about the school
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade student-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel">Students</h4>
+			</div>
+			<div class="modal-body">
+				This is the list of students
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end %>
+
+

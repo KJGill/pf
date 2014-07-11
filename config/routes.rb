@@ -1,12 +1,22 @@
 Rails.application.routes.draw do   
+
+  
+  resources :investments, only: [:new, :create]
+
+  resources :dashboard, only: [:dashboard, :show]
+
   get 'investors/index'
 
 devise_for :investors do delete '/investors/sign_out' => 'devise/sessions#destroy' end
   root 'investors#dashboard'
-  resources :investors, only: [:edit, :update]
+  resources :investors, only: [:edit, :update, :show]
+
+
   # delete '/investors/sign_out' => 'devise/sessions#destroy'
 
 
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

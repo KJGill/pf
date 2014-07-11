@@ -9,7 +9,9 @@ Rails.application.routes.draw do
 
 devise_for :investors do delete '/investors/sign_out' => 'devise/sessions#destroy' end
   root 'investors#dashboard'
-  resources :investors, only: [:edit, :update]
+  resources :investors, only: [:edit, :update, :show]
+
+
   # delete '/investors/sign_out' => 'devise/sessions#destroy'
 
 

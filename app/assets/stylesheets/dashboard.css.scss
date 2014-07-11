@@ -148,18 +148,40 @@ ul.inquiries {
 	margin-right: 10px;
 }
 
+.header1 {
+	a {
+	font-family: 'Arial', sans-serif;
+	color: #ffffff;
+}
+a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+button{
+	background-image: url(/assets/nav-trip.png);
+	background-position: -194px -93px;
+	height: 42px;
+width: 52px;
+border: 0;
+}
+}
 /*.prodigy_logo {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.prodigy_logo img {
-	margin-right: 100px;	
-	position: relative;
-}
 */
+.prodigy_logo img {
+    padding-top: 4px;
+
+}
 
 
 
+.linkto{
+
+padding-right: 1em;
+padding-top: 1em;
+}
 

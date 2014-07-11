@@ -55,7 +55,7 @@
 
 
       <div ><%= f.label :alumnus_status,"Are you an alumnus of the school that you are interested in investing in?" %><br>
-      <%= f.select :alumnus_status, [["Yes",1], ["No",0]]  %></div><br />  
+      <%= f.select :alumnus_status, [["Yes",1], ["No",0]]  %></div>
       <div class="additional-q"><h6>If you answered yes to the previous question, please answer the following question:</h6></div> 
       <div> <%= f.label :grad_year, "What year did you graduate" %></div> 
       <div><%= f.select(:grad_year, (1950..Time.now.year)) %></div>  

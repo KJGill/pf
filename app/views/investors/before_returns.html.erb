@@ -1,53 +1,54 @@
-<%= render 'header' %>
 
-<script>
-$(function () {
-	$('#myTab a:last').tab('show')
-	$('#myTab a[href="#returns1"]').tab('show')
-	$('#myTab a[href="#returns2"]').tab('show')
-})
-</script>
-<div class = "container st-content full-page">
-	<br></br>
-	<div class = "row">
-		<div class = "col-md-12">
-			<div class = "row">
-				<div class = "col-md-1">
+<div id = "dashboard">
+<div id="st-container" class="st-container">
+		<!-- 	
+			example menus 
+			these menus will be on top of the push wrapper
+		-->
+		
+
+		<nav class="st-menu st-effect-2" id="menu-2">
+			<h2> Investor Avatar</h2>
+			<ul>
+				<li><a class="dashboard" href= "/" >Dashboard</a></li>
+				<li> <%= link_to "New Investment", new_investment_path %></li>
+				<li><a class="current_investment" href="#">Current Investments</a></li>
+				<li><a class="pastinvestment" href="#">Past Investments</a></li>
+				<li><a class="social_impact" href="#">Social Impact</a></li>
+				<li><a class="netowrking" href="#">Networking</a></li>
+				<li><a class="document" href="#">Documents</a></li>
+				<li><a class="account" href="#">Account</a></li>
+				<li><a class="faq" href="#">FAQ</a></li>
+				<li><%= link_to "Logout", destroy_investor_session_path, method: :delete%></li>
+			</ul>
+		</nav>
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+
+			<!-- 	
+				example menus 
+				these menus will be under the push wrapper
+			-->
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<!-- Top Navigation -->
+					<header>	
+						<%= render "header" %>
+					</header><!-- /main -->
 				</div>
-				<div class = "col-md-11">
-					<div class = "container welcome" style ="width: 100%">
-						<h1> Welcome, John</h1>
-					</div>
-				</div>
-			</div>
-			<br></br>
-			<div class = "row">
-				<div class = "col-md-9">
-					<div class = "row">
-						<ul class="nav nav-tabs" role="tablist" id="myTab">
-							<li class="active"><a href="#returns1" role="tab" data-toggle="tab">Columbia</a></li>
-							<li><a href="#returns2" role="tab" data-toggle="tab">Insead</a></li>
-						</ul>
-					</div>
-					<div class = "row">
-					<div class = "col-md-9">
-						<div class="tab-content">
-							<div class="tab-pane active" id="returns1">content1</div>
-							<div class="tab-pane" id="returns2">content2</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div class = "col-md-3">
-				</div>
-			</div>
-			<div class = "col-md-2">
-			</div>
-		</div>
-	</div>
+				<!-- /st-content-inner -->
+				<%= render "before_returns" %>
+
+				<!-- <footer>
+					<%= render "footer" %>
+				</footer> -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+		<!-- /st-contain -->
 
 
-
-
-
+		<script src="/assets/classie.js"></script>
+		<script src="/assets/sidebarEffects.js"></script>
+</div>
+</div>
 

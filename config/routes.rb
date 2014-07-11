@@ -1,6 +1,5 @@
 Rails.application.routes.draw do   
 
-  devise_for :investors
   
   resources :investments, only: [:new, :create]
 

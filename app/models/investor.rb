@@ -8,10 +8,8 @@ class Investor < ActiveRecord::Base
 	has_many :investments
 
 
-	validates :first_name, :presence => true 
-	validates :last_name, :presence => true 
-	validates :origin_country, :presence => true 
-	validates :resident_country, :presence => true 
+	validates :first_name, :last_name, :origin_country, :resident_country, presence: true 
+	validates :email, uniqueness: true 
 	# validate :resident_country_school_country 
 
 	# private 

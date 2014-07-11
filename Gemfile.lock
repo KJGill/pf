@@ -57,6 +57,7 @@ GEM
       rails (>= 3.0.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    google_visualr (2.3.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.1.1)
@@ -149,6 +150,7 @@ DEPENDENCIES
   country_select
   devise
   email_verifier
+  google_visualr (>= 2.1)
   jbuilder (~> 2.0)
   jquery-rails
   pg

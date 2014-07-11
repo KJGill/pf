@@ -5,6 +5,7 @@ class Investor < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
 	has_one :school
+	has_many :investments
 
 	validates :first_name, :presence => true 
 	validates :last_name, :presence => true 

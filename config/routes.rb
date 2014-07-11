@@ -1,9 +1,13 @@
 Rails.application.routes.draw do   
   devise_for :investors
+  
+  resources :investments, only: [:new, :create]
+
+  resources :dashboard, only: [:dashboard, :show]
+
   root 'dashboard#dashboard'
 
-
-
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

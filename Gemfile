@@ -41,6 +41,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'bootstrap-sass'
 
+gem "google_visualr", ">= 2.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

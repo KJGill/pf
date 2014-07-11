@@ -22,3 +22,8 @@ schools.each do |school|
 	School.create!(name: school)
 end
 
+alumnus_statuses = ['Yes', 'No']
+
+alumnus_status.each do |alumnus_status|
+	Alumnus_status.create!(name: alumnus_status)
+end

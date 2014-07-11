@@ -1,0 +1,43 @@
+<%= render 'header' %>
+
+<div class = "container st-content full-page">
+	<br></br>
+	<div class = "row">
+		<div class = "col-md-12">
+			<div class = "row">
+			<div class = "col-md-1">
+			</div>
+			<div class = "col-md-11">
+				<div class = "container welcome" style ="width: 100%">
+					<h1> Welcome, John</h1>
+				</div>
+			</div>
+			</div>
+			<br></br>
+			<div class = "row">
+				<div class = "col-md-9">
+				<ul class="nav nav-tabs" role="tablist" id="myTab">
+					  <li class="active"><a href="#returns1" role="tab" data-toggle="tab">Columbia</a></li>
+					  <li><a href="#returns2" role="tab" data-toggle="tab">Insead</a></li>
+				</ul>
+		<div class="tab-content">
+		  <div class="tab-pane active" id="returns1">...</div>
+		  <div class="tab-pane" id="returns2">...</div>
+		</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
+

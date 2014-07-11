@@ -1,0 +1,52 @@
+.full-page {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+#returns1 {
+	 border:solid; 
+	 width: 70%; 
+	 height:400px; 
+	 margin: 0 auto; 
+
+}
+#returns2 {
+	 border:solid; 
+	 width: 70%; 
+	 height:400px; 
+	 margin: 0 auto; 
+}
+
+ .nav-tabs {
+	margin-left: 146px;
+	display: block;
+}
+
+.copouns{
+	border:solid; 
+	height: 200px; 
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.school-tabs a {
+	background-color: white;
+	color: black !important;
+	border:solid;
+	padding: 0;
+}
+
+.school-tabs {
+	border:solid;
+	border-width: 2px;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	width: 20%;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: #0C415B;
+	color: white !important;
+	width:100%;
+}

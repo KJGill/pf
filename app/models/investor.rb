@@ -4,7 +4,9 @@ class Investor < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-	has_one :school #need to change in the future
+	has_one :school
+	has_many :investments
+
 
 	validates :first_name, :last_name, :origin_country, :resident_country, presence: true 
 	validates :email, uniqueness: true 

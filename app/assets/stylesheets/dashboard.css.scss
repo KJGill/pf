@@ -6,11 +6,12 @@ body{
 font-family: 'Anaheim', sans-serif;
 /*overflow: hidden;*/
 }
-
+.testing {
+	background-color: blue;
+}
 
 .footer {
 	min-width:100%;
-
 	position:relative;
 	left:0;
     clear: both;
@@ -19,7 +20,7 @@ font-family: 'Anaheim', sans-serif;
 	height: 130px;
 	display: block;
 	overflow: hidden;
-	bottom: 0px;
+	bottom: 0;
 	padding: 0;
 	margin: 0;
 
@@ -181,7 +182,8 @@ border: 0;
 
 .linkto{
 
-padding-right: 1em;
+
 padding-top: 1em;
 }
+
 

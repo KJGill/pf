@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#using gem for image carousel
+gem 'flexslider'
+
 #Using gem to validate email addresses 
 gem 'email_verifier'
 
@@ -41,6 +44,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'bootstrap-sass'
 
+gem "google_visualr", ">= 2.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -1,11 +1,24 @@
 <%= render 'header' %>
 
 <script>
-$(function () {
-	$('#myTab a:last').tab('show')
-	$('#myTab a[href="#returns1"]').tab('show')
-	$('#myTab a[href="#returns2"]').tab('show')
-})
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			itemWidth: 210,
+			itemMargin: 5,
+			minItems: 2,
+			maxItems: 4
+		});
+	});
+</script>
+
+<script>
+	$(function () {
+		$('#myTab a:last').tab('show')
+		$('#myTab a[href="#returns1"]').tab('show')
+		$('#myTab a[href="#returns2"]').tab('show')
+	})
 </script>
 <div class = "container st-content full-page">
 	<br></br>
@@ -30,12 +43,35 @@ $(function () {
 						</ul>
 					</div>
 					<div class = "row">
-					<div class = "col-md-9">
-						<div class="tab-content">
-							<div class="tab-pane active" id="returns1">content1</div>
-							<div class="tab-pane" id="returns2">content2</div>
+						<div class = "col-md-9">
+							<div class="tab-content">
+								<div class="tab-pane active" id="returns1">content1</div>
+								<div class="tab-pane" id="returns2">content2</div>
+							</div>
 						</div>
 					</div>
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<!-- items mirrored twice, total of 12 -->
+						</ul>
 					</div>
 				</div>
 				<div class = "col-md-3">

@@ -3,6 +3,7 @@
 //= require classie
 //= require sidebarEffects
 //= require jquery_ujs
+//= require jquery.flexslider
 //= require_tree .
 
 

@@ -146,10 +146,9 @@
 						</div> -->          
 						<!-- <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel"> -->
 						<select>
-							<% School.all.each do |school| %>
-							<option><%= link_to school.name, '#' %></option>
-							<% end %>
+						<%= options_for_select(School.all.collect {|s| [s.name] },"#{School.find_by(id: current_investor.school_id).name}")%>
 						</select>
+						
 					</div>
 					<div class = "col-md-3">
 					</div>

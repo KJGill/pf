@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#using gem for image carousel
+gem 'flexslider'
+
 #Using gem to validate email addresses 
 gem 'email_verifier'
 

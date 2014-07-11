@@ -5,6 +5,8 @@
 @import "intial_dashboard";
 @import "before_returns";
 @import "signup";
+@import  "flexslider";
+@import "flexslider_override";
 /*  
 Sticky Footer Solution
 by Steve Hatcher 
@@ -21,5 +23,5 @@ http://www.cssstickyfooter.com */
 
 #dashboard #st-container .st-menu ul .dashboard {
 	font-weight: bold;
-	background: blue;
+	background: rgba(0,0,0,0.2);
 }

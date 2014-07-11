@@ -9,7 +9,7 @@
 		<div class = "col-md-1"> </div>
 		<div class = "col-md-11">
 			<div class = "container welcome" style ="width: 100%">
-				<h1> Welcome, John</h1>
+				<h1> Welcome, <%= current_investor.first_name %></h1>
 			</div>
 		</div>
 	</div>
@@ -45,6 +45,29 @@
 				<div class="tab-pane" id="returns2">content2</div>
 			</div>
 		</div>
+		<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<li>
+								<img src="/assets/student_class.png" />
+							</li>
+							<!-- items mirrored twice, total of 12 -->
+						</ul>
+					</div>
 	</div>
 	<div class = "col-md-3">
 		<div class = "container copouns"></div>
@@ -69,3 +92,15 @@ $(function () {
 })
 </script>
 
+<script>
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			itemWidth: 210,
+			itemMargin: 5,
+			minItems: 2,
+			maxItems: 4
+		});
+	});
+</script>

@@ -9,12 +9,12 @@
 		</div>
 		<div class="col-sm-4" style = "padding-left:0px; padding-right:0px;">
 			<div class = "prodigy_logo">
-			<img id="Prodigy_Finance" src="../assets/prodigy_finance_logo.png" height="8%" width="8%">
+			<img id="Prodigy_Finance" src="../assets/logo-light.png" height="10%" width="10%">
 			</div>
 		</div>
 		<div class = "col-sm-7">
 			<div class = "log_out">
-			<%= link_to "Log out", "destroy_investor_session_path" %>
+			<%= link_to("Log out", destroy_investor_session_path, :method => :delete) %>
 			</div>
 		</div>
 	</div>

@@ -5,7 +5,7 @@
 </div>
 <div class = "col-md-5">
 	<div class = "container welcome" style ="width: 100%">
-		<h1> Welcome, John</h1>
+		<h1> Welcome, <%= current_investor.first_name %></h1>
 	</div>
 </div>
 <div class = "col-md-6">
@@ -15,7 +15,7 @@
 	<div class = "col-md-10">
 		<div class = "row">
 			<div class = "investment_buttons">
-				<div class = "col-md-3">
+				<div class = "col-md-4">
 				</div>
 				<div class = "col-md-3">
 					<button type="button" class="btn btn-default btn-lg new_investment">New Investment</button>
@@ -24,13 +24,13 @@
 					<button type="button" class="btn btn-default btn-lg new_investment">Continue Application</button>
 				</div>
 			</div>
-			<div class = "col-md-3">
+			<div class = "col-md-2">
 			</div>
 		</div>
 		<br></br>
 
 
-		<div class = "overview container" style = "border: solid;">
+		<div class = "overview container">
 			<div class = "row">
 				<div class = "col-md-12">
 					<h2 class = "container" style = "width:100%;">
@@ -70,7 +70,8 @@
 			<!-- <div class = "row">
 			<div class = "col-md-3" style = "border:solid"> -->
 				<div class = "stats container"> 
-					<ul style = "text-align:center;">
+				<img src="/assets/stats1.gif">
+					<!-- <ul style = "text-align:center;">
 						<li>to date</li>
 						<ul>
 							<li>$50M</li>
@@ -91,7 +92,7 @@
 							<li>99%</li>
 						</ul>
 						<li>REPAYMENT RATE</li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 		</div>
@@ -137,17 +138,18 @@
 					<div class = "col-md-3">
 					</div>
 					<div class = "col-md-6">
-						<div class="dropdown container" id = "select_school" style = "width:100%; text-align:center" >
+						<!-- <div class="dropdown container" id = "select_school" style = "width:100%; text-align:center" >
 							<a href="#" class="btn-lg button--blue dropdown-toggle km-investor-home-banner-dropdown select_button col-md-6" data-toggle="dropdown" style = "width:100%; margin:0;">
 								Select School 
 								<span class="caret" ></span>
 							</a>  
-						</div>          
-						<ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+						</div> -->          
+						<!-- <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel"> -->
+						<select>
 							<% School.all.each do |school| %>
-							<li><%= link_to school.name, '#' %></li>
+							<option><%= link_to school.name, '#' %></option>
 							<% end %>
-						</ul>
+						</select>
 					</div>
 					<div class = "col-md-3">
 					</div>
@@ -168,7 +170,7 @@
 
 		<div class = "col-md-6" style = "text-align:center;">
 			<div class="thumbnail-container">
-				<img src="/assets/school_thumbnail.png" class="img-thumbnail">
+				<img src="/assets/student_class.png" class="img-thumbnail">
 				<a href="#" class="btn"  data-toggle="modal" data-target= ".student-modal" id = "fact-card_modal">Students</a>
 			</div>
 		</div>
@@ -176,7 +178,7 @@
 </div>
 
 <!--   -->
-<div class = "col-md-2">
+<div class = "col-md-2" style="padding-left: 0;">
 	<div class = "relationship_manager" style = "text-align:center;"> 
 		<div class = "txt" > <h5> Contact Jenn, <br> Your Investor Relations Manager</h5></div>
 		<center>

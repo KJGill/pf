@@ -4,6 +4,7 @@
 @import "component";
 @import "intial_dashboard";
 @import "before_returns";
+@import "signup";
 /*  
 Sticky Footer Solution
 by Steve Hatcher 
@@ -18,3 +19,7 @@ http://www.cssstickyfooter.com */
 	padding: 0 !important;
 }
 
+#dashboard #st-container .st-menu ul .dashboard {
+	font-weight: bold;
+	background: blue;
+}

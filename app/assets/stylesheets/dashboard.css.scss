@@ -4,7 +4,7 @@
 
 body{
 font-family: 'Anaheim', sans-serif;
-overflow: hidden;
+/*overflow: hidden;*/
 }
 .testing {
 	background-color: blue;
@@ -119,15 +119,23 @@ ul.inquiries {
 
 
 .header1 {
-	background: #ffffff;
+	background: #0C415B;
 	position: fixed;
 	box-shadow: 0px 1px 1px #888888;
 	margin-top: 0px;
 	min-width: 100%;
-	height: 30px;
+	height: 45px;
 	top: 0px;
 	left: 0px;
 	z-index: 10;
+
+	.header_link{
+		float: right;
+		vertical-align: bottom;
+		padding-right: 20px;
+		padding-top: 10px;
+		bottom:0;
+	}
 }
 
 .header1 img {
@@ -142,19 +150,41 @@ ul.inquiries {
 	margin-right: 10px;
 }
 
+.header1 {
+	a {
+	font-family: 'Arial', sans-serif;
+	color: #ffffff;
+}
+a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+button{
+	background-image: url(/assets/nav-trip.png);
+	background-position: -194px -93px;
+	height: 42px;
+width: 52px;
+border: 0;
+}
+}
 /*.prodigy_logo {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.prodigy_logo img {
-	margin-right: 100px;	
-	position: relative;
-}
 */
+.prodigy_logo img {
+    padding-top: 4px;
+
+}
 
 
 
+.linkto{
+
+padding-right: 1em;
+padding-top: 1em;
+}
 
 

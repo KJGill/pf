@@ -1,11 +1,19 @@
 Rails.application.routes.draw do   
+
   devise_for :investors
   
   resources :investments, only: [:new, :create]
 
   resources :dashboard, only: [:dashboard, :show]
 
-  root 'dashboard#dashboard'
+  get 'investors/index'
+
+devise_for :investors do delete '/investors/sign_out' => 'devise/sessions#destroy' end
+  root 'investors#dashboard'
+  resources :investors, only: [:edit, :update]
+  # delete '/investors/sign_out' => 'devise/sessions#destroy'
+
+
 
   
 

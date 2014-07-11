@@ -1,0 +1,28 @@
+<div class="header1 container">
+	<div class="row">
+		<div class="col-sm-2" style = "padding-left:0px; padding-right:0px;" >
+			<div id="st-trigger-effects" class=" container column">
+				<button data-effect="st-effect-2" class = "Btn">
+					<em></em>
+				</button>
+			</div>
+		</div>
+		<div class="col-sm-3" style = "padding-left:0px; padding-right:0px;">
+			<div class = "prodigy_logo">
+			<img id="Prodigy_Finance" src="../assets/prodigy_finance_logo.png" height="14%" width="14%">
+			</div>
+		</div>
+		<div class = "col-sm-7 linkto">
+			<div class = "log_out">
+		<%= link_to "Logout", destroy_investor_session_path, method: :delete%>
+			</div>
+			<div class = "log_out">
+		<%= link_to "Documents", destroy_investor_session_path, method: :delete%>
+			</div>
+			<div class = "log_out">
+		<%= link_to "Home", root_path %>
+			</div>
+		</div>
+	</div>
+</div>
+

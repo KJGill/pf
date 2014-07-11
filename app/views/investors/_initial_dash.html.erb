@@ -146,7 +146,7 @@
 						</div> -->          
 						<!-- <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel"> -->
 						<select>
-						<%= options_for_select(School.all.collect {|s| [s.name] },"#{School.find_by(id: current_investor.school_id).name}")%>
+						<%= options_for_select(School.all.collect {|s| [s.name , s.id] },"#{School.find_by(id: current_investor.school_id).id}")%>
 						</select>
 						
 					</div>

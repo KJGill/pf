@@ -5,5 +5,6 @@
 //= require jquery_ujs
 //= require jquery.flexslider
 //= require_tree .
+//= require bootstrap
 
 

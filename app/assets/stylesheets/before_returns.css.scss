@@ -8,8 +8,9 @@
 .graphs{
 	 border:solid; 
 	 width: 820px; 
-	 height:460px; 
+	 height:540px; 
 	 margin: 0 auto; 
+	 padding-top: 10px;
 	 background-color: white;
 }
 
@@ -64,16 +65,66 @@ margin-top: 1.25em
 #graph {
 	margin-right: 510px;
 	margin-top: 45px;
-
 }
 
-.total-investment{
+
+.total-investment {
 	z-index: 100;
 	float: right;
-	margin: 5px;
+	margin:5px;
 }
+
+#notifications {
+	margin-top: 120px;
+}
+
+.series_title {
+/*	display: block;*/
+font-weight: bold;
+padding-top: 10px;
+display: inline-block;
+
+}
+
+
+.series_list {
+	font-weight: lighter;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.series {
+	border: solid;
+	display: inline-block;
+	width: 170px;
+	text-align: center;
+	margin-left: 45px;
+}
+.new_investment_col {
+	margin-right: 45px;
+}
+
+.b4_investment_link {
+	border: solid;
+	padding: 0.6em 1.2em;
+	background: #f36f32;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 2px;
+	width: 223px;
+	float: right;
+}
+
+
 
 .nav-tabs .school-tabs a {
 	padding-top: .25em;
+
 	padding-bottom: .25em;	
 }
+

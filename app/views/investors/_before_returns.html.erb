@@ -16,8 +16,8 @@
 	<!-- Tab header -->
 
 	<div class = "row" style="margin-top: 1em">  
-	<div class = "col-md-1">
-			</div>
+		<div class = "col-md-1">
+		</div>
 		<div class = "col-md-8 graph-charts">
 			<div class = "row">
 				<div class = "col-md-8">
@@ -47,59 +47,80 @@
 
 					</div>
 					<div class="tab-pane" id="returns2">content2</div>
+					<div>
+						<div class="col-md-4 series">
+							<p class = "series_title">your series:</p>
+							<p class = "series_list"> 1, 2, 3</p>
+						</div>
+						<div class="col-md-4 ">
+							
+						</div>
+						<div class="col-md-4 new_investment_col">
+							<%= button_to "New Investment", new_investment_path, method: :get, :class => 'b4_investment_link' %>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class = "col-md-3">
 			<div class = "container copouns">
-				<button type="button" class="close" id = "notifications" data-container="body" data-toggle="popover" data-placement="right" data-content="This is your notification center. Here you will see reminders, letting you know if there are any documents you need to upload, as well as notices on when your next copoun date is."></button>
+				<table class="table table-striped table-bordered" border = "3">
+					<tr>
+						<th>Notifications</th>
+					</tr>
+					<button type="button" class="close" id = "notifications" data-container="body" data-toggle="popover" data-placement="left" data-content="This is your notification center. Here you will see reminders, letting you know if there are any documents you need to upload, as well as notices on when your next copoun date is."></button>
+				</table>
 			</div>
+
 			<%= render "investor_relations_manager" %>
 		</div>
 	</div>
+</div>
 
-		<div class = "row">
-			<div class = "col-md-1">
-			</div>
-			<div class = "col-md-11">
-				<div class ="txts"> 
-					8 Students Funded 
-				</div>
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<li>
-							<img src="/assets/student_class.png" />
-						</li>
-						<!-- items mirrored twice, total of 12 -->
-					</ul>
-				</div>
-			</div>
+
+
+<div class = "row">
+	<div class = "col-md-1">
+	</div>
+	<div class = "col-md-11">
+		<div class ="txts"> 
+			8 Students Funded 
+		</div>
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<li>
+					<img src="/assets/student_class.png" />
+				</li>
+				<!-- items mirrored twice, total of 12 -->
+			</ul>
 		</div>
 	</div>
+</div>
+</div>
 
-	<script type="text/javascript">
-		$(window).load(function(){
-			$('#graph').popover('show')
-		});
-		$(window).load(function(){
-			$('#notificationst').popover('show')
-		});
-	</script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#graph').popover('show')
+	});
+	$(window).load(function(){
+		$('#notifications').popover('show')
+	});
+</script>
 
 
 

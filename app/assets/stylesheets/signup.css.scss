@@ -32,6 +32,7 @@ padding: 0;
 width: 390px;
 float: right; 
 background: white;
+margin-bottom: 20px;
 
 }
 
@@ -57,14 +58,11 @@ overflow: hidden;
 	font-family: 'Lato', sans-serif; font-weight:300;
 }
 
-.registration-header h5 {
-text-align: left;
-font-size: 11px;
-margin-top: 0px;
-margin-left: 10px;
-margin-right: 10px;	
-font-family: 'Lato', sans-serif;
-color: #666;
+.registration-header h6 {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #666;
+	font-family: 'Lato', sans-serif;
 }
 
 .banner {
@@ -122,6 +120,8 @@ color: #666;
 }
 
 .inv-model h6 {
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #666;
 	font-family: 'Lato', sans-serif;
 }
@@ -143,8 +143,10 @@ color: #666;
 
 .additional-q {
 
-	color: black;	
-	font-family: 'Lato', sans-serif; font-weight:300;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	font-family: 'Lato', sans-serif;
 
 }
 

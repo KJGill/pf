@@ -146,7 +146,7 @@
 						</div> -->          
 						<!-- <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel"> -->
 						<select>
-						<%= options_for_select(School.all.collect {|s| [s.name , s.id] },"#{School.find_by(id: current_investor.school_id).id}")%>
+						<%= options_for_select(School.all.collect {|s| [s.name , s.id] },"#{current_investor.school_id}")%>
 						</select>
 						
 					</div>
@@ -205,7 +205,7 @@
 				<h4 class="modal-title" id="myModalLabel">Fact-Card</h4>
 			</div>
 			<div class="modal-body">
-				This is the facts about the school
+				These are the facts about the school
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

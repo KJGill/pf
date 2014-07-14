@@ -1,4 +1,3 @@
-
 <div class = "container full-page">
 
 	<br></br>
@@ -13,72 +12,100 @@
 			</div>
 		</div>
 	</div>
-	<br></br>
 
 	<!-- Tab header -->
 
-	<div class = "row">  
-		<div class = "col-md-9 graph-charts">
+	<div class = "row" style="margin-top: 1em">  
+	<div class = "col-md-1">
+			</div>
+		<div class = "col-md-8 graph-charts">
 			<div class = "row">
-				<div class = "col-md-9">
+				<div class = "col-md-8">
 					<ul class="nav nav-tabs" role="tablist" id="myTab">
-						<li class="school-tabs"><a href="#returns1" role="tab" data-toggle="tab">Columbia</a></li>
+						<li class="active school-tabs"><a href="#returns1" role="tab" data-toggle="tab">Columbia</a></li>
 						<li class="school-tabs"><a href="#returns2" role="tab" data-toggle="tab">Insead</a></li>
 					</ul>
 				</div>
+				
 			</div>
 
 
 			<!-- Tab Content -->
 			<div class = "row">
-				<div class="tab-content">
-					<div class="tab-pane active" id="returns1">	<%= render 'charts' %></div>
+				<div class="tab-content graphs">
+					<div class="tab-pane active" id="returns1">	
+						<div class="total-investment"> 
+							<p>Total Investment Value: $10,000</p>
+						</div>
+						<br></br>
+						<button type="button" class="close" id = "graph" data-container="body" data-toggle="popover" data-placement="right" data-content="This is a graph of returns from the last Columbia School series. Once you begin gettign copoun payments in 18 months, you will begin to see how your actual returns compare to what was expected.">
+						</button>
+
+						
+						<%= render 'charts' %>
+
+
+					</div>
 					<div class="tab-pane" id="returns2">content2</div>
 				</div>
 			</div>
 		</div>
 		<div class = "col-md-3">
-			<div class = "container copouns"></div>
-		</div>
-	</div>
-	<div class = "row">
-	<div class = "col-md-1">
-		</div>
-		<div class = "col-md-11">
-			<div class ="txts"> 8 Students Funded </div>
-			<div class="flexslider">
-
-				<ul class="slides">
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<li>
-						<img src="/assets/student_class.png" />
-					</li>
-					<!-- items mirrored twice, total of 12 -->
-				</ul>
+			<div class = "container copouns">
+				<button type="button" class="close" id = "notifications" data-container="body" data-toggle="popover" data-placement="right" data-content="This is your notification center. Here you will see reminders, letting you know if there are any documents you need to upload, as well as notices on when your next copoun date is."></button>
 			</div>
 		</div>
-
 	</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+			</div>
+			<div class = "col-md-11">
+				<div class ="txts"> 
+					8 Students Funded 
+				</div>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<li>
+							<img src="/assets/student_class.png" />
+						</li>
+						<!-- items mirrored twice, total of 12 -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(window).load(function(){
+			$('#graph').popover('show')
+		});
+		$(window).load(function(){
+			$('#notificationst').popover('show')
+		});
+	</script>
+
+
+
 </div>
-
-
 <script>
 	$(function () {
-		$('#myTab a:last').tab('show')
+		$('#myTab a:[href="#returns1"]').tab('show')
 		$('#myTab a[href="#returns1"]').tab('show')
 		$('#myTab a[href="#returns2"]').tab('show')
 	})

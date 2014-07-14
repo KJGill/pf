@@ -4,22 +4,17 @@
 }
 
 
-#returns1 {
-	 border:solid; 
-	 width: 70%; 
-	 height:400px; 
-	 margin: 0 auto; 
 
-}
-#returns2 {
+.graphs{
 	 border:solid; 
-	 width: 70%; 
-	 height:400px; 
+	 width: 820px; 
+	 height:460px; 
 	 margin: 0 auto; 
+	 background-color: white;
 }
 
  .nav-tabs {
-	margin-left: 146px;
+	margin-left: 4em;
 	display: block;
 }
 
@@ -51,6 +46,7 @@
 	width:100%;
 }
 
+
 .txts{
 	border: none;
 padding: 0.6em 1.2em;
@@ -63,4 +59,21 @@ text-transform: uppercase;
 display:inline-block;
 border-radius: 2px;
 margin-top: 1.25em
+}
+
+#graph {
+	margin-right: 510px;
+	margin-top: 45px;
+
+}
+
+.total-investment{
+	z-index: 100;
+	float: right;
+	margin: 5px;
+}
+
+.nav-tabs .school-tabs a {
+	padding-top: .25em;
+	padding-bottom: .25em;
 }

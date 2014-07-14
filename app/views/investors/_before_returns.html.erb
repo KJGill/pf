@@ -26,6 +26,7 @@
 					<li class="school-tabs"><a href="#returns2" role="tab" data-toggle="tab">Insead</a></li>
 				</ul>
 				</div>
+				
 			</div>
 	
 
@@ -33,18 +34,37 @@
 		<div class = "row">
 			<div class="tab-content graphs">
 				<div class="tab-pane active" id="returns1">	
+					<div class="total-investment"> 
+					<p>Total Investment Value: 
+					</p>
+					</div>
 					<br></br>
-<button type="button" class="close" id = "graph" data-container="body" data-toggle="popover" data-placement="right" data-content="This is a graph of returns from the last Columbia School series. Once you begin gettign copoun payments in 18 months, you will begin to see how your actual returns compare to what was expected.">
-					</button>
-					
+<button type="button" class="close" id = "graph" data-container="body" data-toggle="popover" data-placement="right" data-content="This is a graph of returns from the last Columbia School series. Once you begin gettign copoun payments in 18 months, you will begin to see how your actual returns compare to what was expected."></button>
 						
 					<%= render 'charts' %>
 					
-			
 				</div>
 				<div class="tab-pane" id="returns2">content2</div>
+				<div>
+					<div class="col-md-4 series">
+						<p class = "series_title">your series:</p>
+						 <p class = "series_list"> 1, 2, 3</p>
+						 </div>
+					<div class="col-md-4 ">
+					
+					</div>
+					<div class="col-md-4 new_investment_col">
+						<%= button_to "New Investment", new_investment_path, method: :get, :class => 'b4_investment_link' %>
+					</div>
+				</div>
 			</div>
 		</div>
+
+	
+
+
+
+
 		<div class="flexslider">
 						<ul class="slides">
 							<li>
@@ -70,14 +90,23 @@
 					</div>
 	</div>
 	<div class = "col-md-3">
-		<div class = "container copouns"></div>
-	</div>
+		<div class = "container copouns">
+			<table class="table table-striped table-bordered" border = "3">
+				<tr>
+					<th>Notifications</th>
+				</tr>
+				<button type="button" class="close" id = "notifications" data-container="body" data-toggle="popover" data-placement="left" data-content="This is your notification center. Here you will see reminders, letting you know if there are any documents you need to upload, as well as notices on when your next copoun date is."></button>
+			</table>
+		</div>
 
 </div>
 
 <script type="text/javascript">
 		$(window).load(function(){
 		$('#graph').popover('show')
+		});
+		$(window).load(function(){
+		$('#notifications').popover('show')
 		});
 		</script>
 
@@ -87,7 +116,6 @@
 <script>
 $(function () {
 	$('#myTab a:[href="#returns1"]').tab('show')
-	$('#myTab a[href="#returns1"]').tab('show')
 	$('#myTab a[href="#returns2"]').tab('show')
 })
 </script>

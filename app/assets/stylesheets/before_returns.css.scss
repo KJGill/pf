@@ -15,7 +15,7 @@
 }
 
  .nav-tabs {
-	margin-left: 4em;
+	margin-left: 0;
 	display: block;
 }
 
@@ -124,5 +124,7 @@ display: inline-block;
 
 .nav-tabs .school-tabs a {
 	padding-top: .25em;
-	padding-bottom: .25em;
+
+	padding-bottom: .25em;	
 }
+

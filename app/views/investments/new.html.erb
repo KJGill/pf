@@ -1,7 +1,7 @@
 <div class = "container container_border">
 <h1> Make a New Investment</h1>
 
-<%= form_for @investment, url: '/investments/create' do |f| %>
+<%= form_for @investment, url: investments_path do |f| %>
 	<div class = "container">
 		<div class = "row">
 			<div class = "row">
@@ -15,10 +15,16 @@
 				<%= f.label :amount  %>
 				<%= f.number_field :amount, :class => 'form-control borrow' %>
 	 		</div>
+	 		<div class = "inv_id">
+	 			<%= f.label :investor_id %>
+				<%= f.hidden_field :investor_id, :value => current_investor.id %>
+	 		</div>
 		</div>
 		<div class="form-group col-md-2	">
 	    	<%= f.submit "submit", :class => "btn btn-success" %>
+
 	  	</div>
+	  		
 	</div>
 <% end %>
 </div>

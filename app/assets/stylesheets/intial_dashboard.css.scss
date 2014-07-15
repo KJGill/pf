@@ -139,10 +139,12 @@ img .img-thumbnail {
 .relationship_manager{
 	background: #f1f2f2;
 	border-radius: 10px 10px 0px 0px; 
-	/*width:200px;
-	height:400px;*/
-	float:right;
+	width:240px;
+	/*height:400px;*/
+	margin: 0 auto;
+	margin-top: 3em;
 	position: relative;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
 
 	.txt{
 		margin-left: 10px;
@@ -167,6 +169,7 @@ img .img-thumbnail {
 		}
 		button{
 			padding:6px;
+			
 		}
 
 }

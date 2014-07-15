@@ -6,6 +6,8 @@ class Investor < ActiveRecord::Base
 
 	has_one :school
 	has_many :investments
+	has_many :series, through: :investments
+
 
 
 	validates :first_name, :last_name, :origin_country, :resident_country, presence: true 

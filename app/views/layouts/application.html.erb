@@ -14,6 +14,18 @@
 <body>
 
 
+<div class="flash_messages">
+  <% if flash[:success] %>
+    <div class="success">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
+  <% if flash[:error] %>
+    <div class="error">
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+</div>
 
 <%= yield %>
 

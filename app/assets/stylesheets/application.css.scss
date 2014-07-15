@@ -25,3 +25,23 @@ http://www.cssstickyfooter.com */
 	font-weight: bold;
 	background: rgba(0,0,0,0.2);
 }
+
+.success {
+  padding: 10px;
+  margin: 10px 0;
+  color: green;
+  border: 1pt solid green;
+  background-color: #f2fdeb;
+  text-align: center;
+  z-index: 10000000;
+}
+
+.error {
+  padding: 10px;
+  margin: 10px 0;
+  color: red;
+  border: 1pt solid red;
+  background-color: #fdece6;
+  text-align: center;
+  z-index: 10000000;
+}

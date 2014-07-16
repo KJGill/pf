@@ -4,9 +4,12 @@ class InvestmentsController < ApplicationController
 		@investment = Investment.new
 	end
 
+end
+
 	def create
 		@investor = current_investor
 		@success, @message, @investment = Investment.create(investment_params)
+
 
 		if @success
 			current_investor.investments << @investment

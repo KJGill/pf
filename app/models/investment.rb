@@ -3,6 +3,7 @@ class Investment < ActiveRecord::Base
 	has_many :series
 	validates :amount, presence: true
 
+
 	def self.create(investment_params) 
 		investment = Investment.new(investment_params)
 		investment_amount = investment_params[:amount].to_f
@@ -15,4 +16,6 @@ class Investment < ActiveRecord::Base
 			return [true, "You have successfully invested.", investment]
 		end
 	end
+
 end
+

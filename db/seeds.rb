@@ -22,3 +22,10 @@ schools.each do |school|
 	School.create!(name: school)
 end
 
+
+
+all_series = [12,19,28]
+
+all_series.each do |series|
+	Series.create!(series_number: series)
+end

@@ -1,0 +1,2 @@
+module StudentImpactsHelper
+end

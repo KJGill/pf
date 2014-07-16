@@ -7,4 +7,5 @@ class InvestorsController < ApplicationController
  def show
   	render 'before_returns'
   end
+
 end

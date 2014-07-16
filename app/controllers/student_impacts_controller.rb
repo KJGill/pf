@@ -1,0 +1,2 @@
+class StudentImpactsController < ApplicationController
+end

@@ -8,7 +8,7 @@
 .graphs{
 	 border:solid; 
 	 width: 820px; 
-	 height:540px; 
+	 height:600px; 
 	 margin: 0; 
 	 padding-top: 10px;
 	 background-color: white;
@@ -75,7 +75,7 @@ margin-top: 1.25em
 .total-investment {
 	z-index: 100;
 	float: right;
-	margin:5px;
+	margin-right:20px;
 }
 
 #notifications {
@@ -132,3 +132,16 @@ display: inline-block;
 	padding-bottom: .25em;	
 }
 
+.reinvest {
+	z-index: 100000;
+	float: right;
+	margin-right: 20px;
+	
+}
+.row .special_row_total {
+	margin-bottom: -20px;
+}
+
+.row .special_row {
+	margin-bottom: -20px;
+}

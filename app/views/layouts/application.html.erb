@@ -12,21 +12,6 @@
 <% javascript_include_tag 'http://www.google.com/jsapi' %>
 </head>
 <body>
-
-
-<div class="flash_messages">
-  <% if flash[:success] %>
-    <div class="success">
-      <%= flash[:success] %>
-    </div>
-  <% end %>
-  <% if flash[:error] %>
-    <div class="error">
-      <%= flash[:error] %>
-    </div>
-  <% end %>
-</div>
-
 <%= yield %>
 
 <%= yield :script %>

@@ -22,6 +22,6 @@ class InvestmentsController < ApplicationController
 	private 
 
 	def investment_params
-		params.require(:investment).permit(:series_id, :amount) 
+		params.require(:investment).permit(:series_id, :amount, :school_id) 
 	end 
 end

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do   
 
   
+  get 'networks/show'
+
   resources :investments, only: [:new, :create]
 
   resources :dashboard, only: [:dashboard, :show]

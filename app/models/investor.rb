@@ -6,7 +6,7 @@ class Investor < ActiveRecord::Base
 
 	has_one :school
 	has_many :investments
-	has_many :series, through: :investments
+	# has_many :series, through: :investments
 
 
 

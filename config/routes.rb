@@ -13,6 +13,7 @@ devise_for :investors do delete '/investors/sign_out' => 'devise/sessions#destro
 
 get 'charts/index' => 'charts#index'
   # delete '/investors/sign_out' => 'devise/sessions#destroy'
+get 'students/index' => 'students#index'
 
 
 

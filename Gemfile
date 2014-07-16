@@ -57,3 +57,8 @@ gem "google_visualr", ">= 2.1"
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Geocode addresses for use in mapbox
+gem 'geocoder' 
+
+gem 'json'
+

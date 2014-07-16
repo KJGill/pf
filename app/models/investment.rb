@@ -1,6 +1,7 @@
 class Investment < ActiveRecord::Base
 	belongs_to :investor
 	has_many :series
+	belongs_to :school
 	validates :amount, presence: true
 
 

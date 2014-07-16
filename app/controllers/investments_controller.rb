@@ -4,7 +4,7 @@ class InvestmentsController < ApplicationController
 		@investment = Investment.new
 	end
 
-end
+
 
 	def create
 		@investor = current_investor

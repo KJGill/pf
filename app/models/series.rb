@@ -1,5 +1,12 @@
 class Series < ActiveRecord::Base
-	belongs_to :investment
+	has_many :investments
 	has_one :school
+
+
+def show 
+	@series = current 
+
+
+end 
 
 end

@@ -10,6 +10,7 @@ end
 def create
 	@investor = current_investor
 	@investment = Investment.create(investment_params)
+
 	if @investment.save 
 		flash[:success] = "Investment Application Successfully Created" 
 		current_investor.investments << @investment

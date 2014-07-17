@@ -1,7 +1,6 @@
 Rails.application.routes.draw do   
 
-  
-  get 'networks/show'
+
 
   resources :investments, only: [:new, :create]
 
@@ -12,6 +11,8 @@ Rails.application.routes.draw do
 devise_for :investors do delete '/investors/sign_out' => 'devise/sessions#destroy' end
   root 'investors#dashboard'
   resources :investors, only: [:edit, :update, :show]
+
+get 'networks/show'
 
 get 'charts/index' => 'charts#index'
   # delete '/investors/sign_out' => 'devise/sessions#destroy'

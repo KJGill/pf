@@ -8,4 +8,8 @@ class InvestorsController < ApplicationController
   	render 'before_returns'
   end
 
+def network
+	render 'network'
+end
+
 end

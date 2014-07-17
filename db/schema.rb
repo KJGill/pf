@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 20140716080959) do
 
   create_table "investments", force: true do |t|
     t.float    "amount"
-    t.integer  "series_id"
     t.integer  "investor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "series_id"
     t.integer  "school_id"
   end
 

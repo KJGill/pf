@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#send emails  
+gem 'mail'
 #using gem for image carousel
 gem 'flexslider'
 

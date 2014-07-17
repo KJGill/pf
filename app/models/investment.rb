@@ -5,7 +5,6 @@ class Investment < ActiveRecord::Base
 
 	validates :amount, presence: true
 
-
 	def self.create(investment_params) 
 		investment = Investment.new(investment_params)
 		investment_amount = investment_params[:amount].to_f
@@ -15,8 +14,14 @@ class Investment < ActiveRecord::Base
 		end
 
 		if investment.save!
+			NetworkMailer.registration_confirmation(investment).deliver 
 			return [true, "You have successfully invested.", investment]
+
 		end
+
+		
+			
+		
 	end
 
 end

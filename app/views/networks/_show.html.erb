@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-			<h2 class = "invite">Invite friends through: </h2>
+				<h2 class = "invite">Invite friends through: </h2>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
@@ -29,55 +29,70 @@
 				<button class="btn btn-primary share_btn linkedin_btn" data-toggle="modal" data-target=".linkedin">Linkedin</button>
 			</div>
 			<div class="col-md-2"></div>
-			<!-- modal content -->
-			<%= content_for :script do %>
-			<!-- email modal -->
-			<div class="modal fade email" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<h4 class="modal-title" id="myModalLabel">Email</h4>
-						</div>
-						<div class="modal-body">
-							This is where email content goes
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- linkden modal -->
-			<div class="modal fade linkedin" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<h4 class="modal-title" id="myModalLabel">Linkedin</h4>
-						</div>
-						<div class="modal-body">
-							This is where linkden content goes
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<% end %>
 		</div>
 	</div>
+
+	<br>
+	<div class="press">
+		
+	<%= render 'press' %>
+
+	</div>
+
 </div>
 
+<%= content_for :script do %>
+	<script>
+		function addInput(divName, divEmail){
+			var newdiv1 = document.createElement('div');
+			var newdiv2 = document.createElement('div');
+			newdiv1.innerHTML = "Recipient Name " +  " <br><input type='text' name='myInputs1[]'>";
+			newdiv2.innerHTML = "Recipient Email " + " <br><input type='text' name='myInputs2[]'>";
+			document.getElementById(divName).appendChild(newdiv1); 
+			document.getElementById(divEmail).appendChild(newdiv2);
+				// removal link
+			var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdiv1.appendChild(removalLink);
+
+    	var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdiv2.appendChild(removalLink);
+
+ 		}
+
+		function addInputLinkedin(divName){
+			var newdivL1 = document.createElement('div');
+			newdivL1.innerHTML = "Recipient Name " + " <br><input type='text' name='myInputsL1[]'>";
+			document.getElementById(divName).appendChild(newdivL1);
+			// removal link
+			var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdivL1.appendChild(removalLink);
+		}
 
 
 
 
 
-<script type="text/javascript">
-$(function () { 
-	$("#myModal").modal({show: false});
-});  
-</script>
+		$(function () { 
+			$("#myModal").modal({show: false});
+			$("#myModal").modal({show: false});
+		});
+	</script>
+
+	<%= render 'invite_modal' %>
+	<%= render 'invite_linkedin_modal'  %>
+<% end %>

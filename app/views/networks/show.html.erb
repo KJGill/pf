@@ -22,7 +22,6 @@
 				<li><%= link_to "Logout", destroy_investor_session_path, method: :delete%></li>
 			</ul>
 		</nav>
-
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 
@@ -38,14 +37,16 @@
 					</header><!-- /main -->
 				</div>
 				<!-- /st-content-inner -->
-				<%= render "initial_dash" %>
+				<%= render "show" %>
 
 				<footer>
 					<%= render "footer" %>
-				</footer>
+				</footer> 
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 		<!-- /st-contain -->
+
+
 		<script src="/assets/classie.js"></script>
 		<script src="/assets/sidebarEffects.js"></script>
 </div>

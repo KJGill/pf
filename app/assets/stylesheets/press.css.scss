@@ -1,0 +1,40 @@
+.image--resp {
+max-width: 100%;
+height: auto;
+}
+
+img {
+border: 0;
+}
+
+.is-centered-text, .l-page-heading-section, .contact-block {
+text-align: center;
+}
+
+.recent-article {
+width: 100%;
+display: block;
+overflow: hidden;
+padding-top: 2.8125rem;
+padding-bottom: 2.8125rem;
+}
+
+.article-image img {
+display: block;
+float: none;
+margin-right: auto;
+margin-left: auto;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.row .recent-article { 
+border-top: 1px solid #454147;
+padding: 50px;
+}

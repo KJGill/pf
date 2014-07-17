@@ -1,0 +1,98 @@
+<div class = "container full-page">
+	<br></br>
+	<div class="row">
+		<div class="col-md-12">
+			<h1> Network </h1>
+		</div>
+	</div>	
+	<br></br>
+	<!-- invite friends container -->
+	<div class="invite_friends">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<h2 class = "invite">Invite friends through: </h2>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<br></br>
+		<br></br>
+		<div class="row">
+			<!-- modal buttons -->
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<!-- email button -->
+				<button class="btn btn-primary share_btn email_btn" data-toggle="modal" data-target=".email">Email</button>
+			</div>
+			<div class="col-md-4">
+				<!-- linkden button -->
+				<button class="btn btn-primary share_btn linkedin_btn" data-toggle="modal" data-target=".linkedin">Linkedin</button>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+
+	<br>
+	<div class="press">
+		
+	<%= render 'press' %>
+
+	</div>
+
+</div>
+
+<%= content_for :script do %>
+	<script>
+		function addInput(divName, divEmail){
+			var newdiv1 = document.createElement('div');
+			var newdiv2 = document.createElement('div');
+			newdiv1.innerHTML = "Recipient Name " +  " <br><input type='text' name='myInputs1[]'>";
+			newdiv2.innerHTML = "Recipient Email " + " <br><input type='text' name='myInputs2[]'>";
+			document.getElementById(divName).appendChild(newdiv1); 
+			document.getElementById(divEmail).appendChild(newdiv2);
+				// removal link
+			var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdiv1.appendChild(removalLink);
+
+    	var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdiv2.appendChild(removalLink);
+
+ 		}
+
+		function addInputLinkedin(divName){
+			var newdivL1 = document.createElement('div');
+			newdivL1.innerHTML = "Recipient Name " + " <br><input type='text' name='myInputsL1[]'>";
+			document.getElementById(divName).appendChild(newdivL1);
+			// removal link
+			var removalLink = document.createElement('a');
+    removalLink.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode)
+    }
+    var removalText = document.createTextNode('Remove Field');
+    removalLink.appendChild(removalText);
+    newdivL1.appendChild(removalLink);
+		}
+
+
+
+
+
+		$(function () { 
+			$("#myModal").modal({show: false});
+			$("#myModal").modal({show: false});
+		});
+	</script>
+
+	<%= render 'invite_modal' %>
+	<%= render 'invite_linkedin_modal'  %>
+<% end %>

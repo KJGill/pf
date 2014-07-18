@@ -52,7 +52,7 @@
 	<div class="col-md-3"></div>
 	<div class="col-md-3">
 
-<button class = "btn" id="blog_btn">blog</button>
+<button class = "btn" id="show-blog_content" > blog</button>
 </div>
 <div class="col-md-3">
 <button class = "btn" id="press_btn">press</button>
@@ -67,9 +67,10 @@
 	<%= render 'press' %>
 
 	</div>
-	<div id="blog_content">
+	<div style ="display:none;" id="blog_content">
 		<%= render 'blog' %>
 	</div>
+
 </div>
 
 <%= content_for :script do %>
@@ -135,6 +136,10 @@ $(document).ready(function(){
   });
  });
 
+$('#show-blog_content').click(function(){
+    $('#blog_content').show();
+    $('#press_content').hide();
+});
 
 	</script>
 

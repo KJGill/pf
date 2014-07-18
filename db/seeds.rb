@@ -7,19 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-schools = ['Cambridge Judge Business School',
-			'Cass Business School',
-			'Columbia Business School',
-			'Cranfield School of Management',
-			'European School of Management and Technology',
-			'London Business School',
-			'Manchester Business School',
-			'Manchester Business School',
-			'Oxford University Said Business School',
-			'Vlerick Business School']
+schools = {'Cambridge Judge Business School' => "Trumpington St, Cambridge CB2 1AG, United Kingdom",
+			'Cass Business School' => "106 Bunhill Row, London EC1Y 8TZ, United Kingdom",
+			'Columbia Business School' => "3022 Broadway, Manhattan, NY 10027, United States",
+			'Cranfield School of Management' => "Central Ave, Cranfield, Bedford MK43 0AL, United Kingdom",
+			'European School of Management and Technology' => "Schloßplatz 1, 10178 Berlin, <Germany></Germany>",
+			'London Business School' => "Sussex Pl, Regents Park, London NW1 4SA, United Kingdom",
+			'Manchester Business School' => "Booth St W, Manchester M15 6PB, United Kingdom",
+			'Oxford University Said Business School' => "Park End St, Oxford OX1 1HP, United Kingdom",
+			'Vlerick Business School' => "Reep 1, 9000 Ghent, Belgium"}
 
-schools.each do |school|
-	School.create!(name: school)
+schools.each do |key, value|
+	School.create!(name: key, location: value)
 end
 
 

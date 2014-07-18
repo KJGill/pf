@@ -18,6 +18,7 @@ get 'charts/index' => 'charts#index'
   # delete '/investors/sign_out' => 'devise/sessions#destroy'
 get 'students/index' => 'students#index'
 
+post '/network_mailer' => 'networks#invite_investors'
 
 
   

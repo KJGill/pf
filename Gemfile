@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#linkedin
+gem 'linkedin' 
 
 #send emails  
 gem 'mail'

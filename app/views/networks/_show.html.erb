@@ -33,10 +33,39 @@
 	</div>
 
 	<br>
-	<div class="press">
-		
+
+<div class="invite_friends">
+<div class="row header">
+	<div class="col-md-4"> 
+		<div class="col-md-4"></div>
+	<h2 class = "articles"> Articles | Filter by: </h2>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+	<br></br>
+	<br></br>
+	<div class="row">
+
+	<div class="col-md-2"></div>
+	<div class="col-md-4">
+
+<button class = "btnblog" id="show-blog_content" > blog</button>
+</div>
+<div class="col-md-4">
+<button class = "btnpress" id="press_btn">press</button>
+</div>
+<div class="col-md-2"></div>
+</div>
+</div>
+
+	<br></br>
+
+	<div id="press_content">
 	<%= render 'press' %>
 
+	</div>
+	<div style ="display:none;" id="blog_content">
+		<%= render 'blog' %>
 	</div>
 
 </div>
@@ -71,7 +100,7 @@
 
 		function addInputLinkedin(divName){
 			var newdivL1 = document.createElement('div');
-			newdivL1.innerHTML = "Recipient Name " + " <br><input type='text' name='myInputsL1[]'>";
+			newdivL1.innerHTML = "Recipient Name " + "<input type='text' name='myInputsL1[]'>";
 			document.getElementById(divName).appendChild(newdivL1);
 			// removal link
 			var removalLink = document.createElement('a');
@@ -84,15 +113,36 @@
 		}
 
 
-
-
-
 		$(function () { 
 			$("#myModal").modal({show: false});
 			$("#myModal").modal({show: false});
 		});
+
+
+
+$(document).ready(function(){
+  $("#blog_btn").click(function(){
+    $("#press_content").hide();
+    $("#blog_content").show();
+  });
+});
+$(document).ready(function(){
+  $("#press_btn").click(function(){
+  	 $("#press_content").show();
+    $("#blog_content").hide();
+  });
+ });
+
+$('#show-blog_content').click(function(){
+    $('#blog_content').show();
+    $('#press_content').hide();
+});
+
 	</script>
 
 	<%= render 'invite_modal' %>
 	<%= render 'invite_linkedin_modal'  %>
 <% end %>
+
+
+

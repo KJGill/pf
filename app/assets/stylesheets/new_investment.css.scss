@@ -1,0 +1,40 @@
+.investment_body {
+
+	background: url(/assets/bg-tile-light.jpg) repeat right top;
+
+} 
+
+.investment_form {
+
+	border-style: solid; 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #00a1e4;
+	font-family: 'Lato', sans-serif; font-weight:300;
+	font-size: 20px;
+	background-color: white;
+	height: 400px;
+	width: 550px;
+}
+
+
+
+form#new_investment.new_investment {
+	background-color: white;
+	color: black;
+	margin-top: 0px;
+	padding: 0px;
+	width: 490px;
+}
+
+input#investment_amount.form-control.borrow {
+	width: 250px;
+	margin-right:auto;
+	margin-left:auto;
+	padding: 0px;
+}
+
+select#investment_school_id {
+	text-align:center;
+}

@@ -1,0 +1,60 @@
+
+ul {
+	border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+
+.archive-content {
+display: block;
+overflow: hidden;
+padding: 0 0 0 15px;
+border-top: 1px solid #454147;
+padding: 50px;
+}
+
+h2 {
+	font-family: 'BitterBold';
+font-weight: normal;
+color: #454147;
+}
+
+.articles {
+	float: right;
+}
+
+.filter {
+	float: right;
+	margin-right: 20px;
+}
+
+#blog_btn {
+	width: 50%;
+	
+}
+
+#press_btn {
+	width: 65%;
+}
+
+.articles-section {
+	background: transparent;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.blogs_contents {
+	background: #f1f2f2;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+
+}

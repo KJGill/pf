@@ -1,43 +1,51 @@
-
-<div class="registration-header" >
-<h3> Make a New Investment</h3>
-
-<%= form_for @investment, url: investments_path do |f| %>
-	<div class="investment-form">
-		<div class = "row">
-			<div class="row">
-				
-		  	<div class="form-group col-md-5">
-		  		<div ><%= f.label :school_id %><br>
-		  			<%= f.collection_select(:school_id, School.all, :id, :name) %>
-		  		</div>
-		  	</div>
-
-			</div>
-			<div class = "row">
-		  	<div class="form-group col-md-5">
-		    	<div class="registration-form" ><%= f.label :series_id %><br>
-      			<%= f.collection_select(:series_id, Series.all, :id, :series_number) %> 
-    			</div>
-		  	</div>
-		 </div>
-			<div class = "form-group col-md-4"> 
-				<div class="registration-form">
-				<%= f.label :amount  %>
-				<%= f.number_field :amount, :class => 'form-control borrow' %> 
-			</div>
-	 		</div>
-	 		<div class = "inv_id">
-				<%= f.hidden_field :investor_id, :value => current_investor.id %>
-	 		</div>
-		</div>
-		<div class="form-group col-md-2	">
-			 <div class= "button_row">
-	    	<%= f.submit "submit", class:"register_button" %>
-	    </div>
-	  	</div>
-	  		
+<div class="flash_messages">
+	<% if flash[:success] %>
+	<div class="success">
+	<%= flash[:success] %>
 	</div>
-<% end %>
+	<% end %>
+	<% if flash[:error] %>
+	<div class="error">
+		<%= flash[:error] %>
+	</div>
+	<% end %>
 </div>
+
+
+<body class="investment_body">	
+		<div class="signin_logo">
+			 <a href="http://prodigyfinance.com"><img align= "center" id="PF_Logo" src="../assets/LILLY.png" height="16%" width="16%"> 
+			 </a>
+		</div>
+
+	<div class="investment_form">
+		<div class="signin_header">
+			<h2>Create a New Investment</h2>
+		</div>
+
+<div class="formforinvestment">
+		<%= form_for @investment, url: investments_path do |f| %>
+		  <div class="invest_label"><%= f.label :school_id %><br /> </div>
+		  <div class="invest_field"> <%= f.collection_select(:school_id, School.all, :id, :name) %></div>
+
+		  <div class="invest_label"><%= f.label :series_id %><br /> </div>
+		  <div class="invest_field"><%= f.collection_select(:series_id, Series.all, :id, :series_number) %> </div>
+
+		  <div class="invest_label"><%= f.label :amount %><br /> </div>
+		  <div class="invest_field"><%= f.number_field :amount, :class => 'form-control borrow' %></div>
+
+		  <div class="invest_field"><%= f.hidden_field :investor_id, :value => current_investor.id %></div>
+</br>
+		  <div class= "signin_button_row"><%= f.submit "Submit", class:"signin_button" %></div>
+
+		<% end %>
+
+ 		
+
+		</div>
+	</div>
+</br> </br> </br>
+<%= render 'footer' %>
+
+<body>
 

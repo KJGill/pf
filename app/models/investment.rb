@@ -3,8 +3,7 @@ class Investment < ActiveRecord::Base
 	belongs_to :school
 	belongs_to :series
 
-	validates :amount, presence: true
-
+	validates :amount, :school_id, :series_id, :investor_id, presence: true 
 
 	def self.create(investment_params) 
 		investment = Investment.new(investment_params)
@@ -16,7 +15,12 @@ class Investment < ActiveRecord::Base
 
 		if investment.save!
 			return [true, "You have successfully invested.", investment]
+
 		end
+
+		
+			
+		
 	end
 
 end

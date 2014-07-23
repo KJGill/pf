@@ -68,7 +68,7 @@
 
 						<%= render 'charts' %>
 
-						<div class="col-md-4 series">
+						<div class="col-md-4 series" >
 							<p class = "series_title">Your series:</p>
 							<p class = "series_list"> 
 							<%= current_investor.investments.map { |x| x.series.try(:series_number) }.compact.to_sentence %>
